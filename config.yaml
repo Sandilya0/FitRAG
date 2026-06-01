@@ -1,0 +1,26 @@
+llm:
+  provider: groq
+  model: llama-3.3-70b-versatile
+  temperature: 0.2
+  max_tokens: 1024
+
+embeddings:
+  model: all-MiniLM-L6-v2
+
+chunking:
+  chunk_size: 500
+  chunk_overlap: 50
+
+retrieval:
+  top_k: 5
+  search_type: hybrid
+
+chroma:
+  persist_directory: ./chroma_db
+  collection_name: fitrag
+
+evaluation:
+  metrics:
+    - faithfulness
+    - answer_relevancy
+    - context_precision

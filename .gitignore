@@ -1,0 +1,22 @@
+venv/
+.env
+__pycache__/
+*.pyc
+data/raw/
+.DS_Store
+chroma_db/
+*.egg-info/
+.env.local
+*.log
+# Frontend
+node_modules/
+frontend/dist/
+frontend/node_modules/
+
+# WHOOP personal data
+data/raw/whoop/
+*.zip
+
+# Misc
+.vscode/
+*.csv
